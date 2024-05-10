@@ -8,5 +8,9 @@ class Fournisseur extends Modele{
     $this->table="fournisseur";
     $this->class="Fournisseur";
   }
-    
+
+  public function save(){
+    $SQL_INSERT="insert into fournisseur (nomf,telf) values ('$this->nomf',$this->telf)";
+    $result= $this->openConnexion()->exec($SQL_INSERT);
+  }
 }
