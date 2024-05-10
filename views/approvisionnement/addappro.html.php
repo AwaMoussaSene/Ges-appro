@@ -1,16 +1,17 @@
 <?php 
+require_once("modele/Modele.php") ;
 require_once("modele/Fournisseur.php") ;
 $fournisseur=new Fournisseur();
-$fournisseurs=$fournisseur->findallFour();
+$fournisseurs=$fournisseur->findAll();
 require_once("modele/Unite.php") ;
 $unite=new Unite();
-$unites=$unite->findAllUnite();
+$unites=$unite->findAll();
 require_once("modele/Categorie.php") ;
 $categorie=new Categorie();
-$categories=$categorie->findAllCategorie();
+$categories=$categorie->findAll();
 require_once("modele/Produit.php") ;
 $produit=new Produit();
-$produits=$produit->findAllProduit();
+$produits=$produit->findAll();
 ?>
 
 <!doctype html>

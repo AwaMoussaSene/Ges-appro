@@ -26,7 +26,7 @@
         <?php 
             require_once("modele/Fournisseur.php") ;
             $fournisseur=new Fournisseur();
-            $fournisseurs=$fournisseur->findallFour();
+            $fournisseurs=$fournisseur->findAll();
         ?>
         <?php foreach ($fournisseurs as $fournisseur):?>
         <tr>

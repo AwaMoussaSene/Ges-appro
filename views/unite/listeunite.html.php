@@ -27,7 +27,7 @@
         <?php 
        require_once("modele/Unite.php") ;
        $unite=new Unite();
-       $unites=$unite->findAllUnite();
+       $unites=$unite->findAll();
         ?>
         <?php foreach ($unites as $unite):?>
         <tr>

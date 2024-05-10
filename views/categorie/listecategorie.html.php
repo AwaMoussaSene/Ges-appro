@@ -27,7 +27,7 @@
         <?php 
           require_once("modele/Categorie.php") ;
           $categorie=new Categorie();
-          $categories=$categorie->findAllCategorie();
+          $categories=$categorie->findAll();
         ?>
         <?php foreach ($categories as $categorie):?>
         <tr>

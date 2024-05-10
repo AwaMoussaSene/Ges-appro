@@ -20,7 +20,7 @@
         <tr>
           <th scope="col">Nom</th>
           <th scope="col">Quantite stock</th>
-          <th scope="col">Categorie</th>
+          <!-- <th scope="col">Categorie</th> -->
 
         </tr>
       </thead>
@@ -28,13 +28,13 @@
         <?php 
             require_once("modele/Produit.php") ;
             $produit=new Produit();
-            $produits=$produit->findAllProduit();
+            $produits=$produit->findAll();
         ?>
         <?php foreach ($produits as $produit):?>
         <tr>
           <th scope="row"><?= $produit->libelle?></th>
           <td><?= $produit->qtestock?></td>
-          <td><?= $produit->libellec?></td>
+          <!-- <td><?= $produit->libellec?></td> -->
         </tr>
         <?php endforeach?>
     
